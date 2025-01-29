@@ -1,86 +1,309 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legal Solutions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Solutions</title>
 
-    <!--Google font links-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!--Google font links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <!--Daisy UI + Tailwind CSS (start)-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'primary-color': '#B68C5A',
-              },
-              fontFamily: {
-                poppins: ['Poppins', 'serif'],
-                eb_garamond: ['EB Garamond', 'serif'],
-              }
-            }
+  <!--Daisy UI + Tailwind CSS (start)-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'primary-color': '#B68C5A',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'serif'],
           }
         }
-    </script>
-    <!--Tailwind CSS (end)-->
+      }
+    }
+  </script>
+  <!--Tailwind CSS (end)-->
+
+  <!--simple styles-->
+  <style>
+    .eb-garamond-font {
+      font-family: "EB Garamond", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
 
 </head>
+
 <body class="font-poppins">
-    
-    <!---------->
-    <!--Header-->
-    <!---------->
-    <header class="container mx-auto my-6">
-        <div class="navbar bg-base-100">
 
-            <!--logo part-->
-            <div class="navbar-start">
-                <img src="./images/logo2.png" alt="">
-            </div>
+  <!---------->
+  <!--Header-->
+  <!---------->
+  <header class="container mx-auto my-2 md:my-6">
+    <div class="navbar bg-base-100">
 
-            <!--breadcrumbs-->
-            <div class="navbar-center breadcrumbs text-sm hidden lg:flex">
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Cases</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact Us</a></li>
-                    <li><a></a></li>
-                  </ul>
-            </div>
+      <!--logo part-->
+      <div class="navbar-start">
+        <img class="w-3/5 md:w-fit" src="./images/logo2.png" alt="">
+      </div>
 
-            <!--button part-->
-            <div class="navbar-end">
-              <a class="btn bg-primary-color text-white">Free Consultation</a>
-            </div>
+      <!--breadcrumbs-->
+      <div class="navbar-center breadcrumbs text-sm hidden lg:flex">
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>Services</a></li>
+          <li><a>Cases</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact Us</a></li>
+          <li><a></a></li>
+        </ul>
+      </div>
 
+      <!--button part-->
+      <div class="navbar-end">
+        <a class="btn bg-primary-color text-white">Free Consultation</a>
+      </div>
+
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+  <!---------->
+  <!-- Main -->
+  <!---------->
+  <main class="container mx-auto my-8 px-2 md:px-0">
+
+    <!------------------------->
+    <!--Hero / Banner Section-->
+    <!------------------------->
+    <section class="hero p-1 md:p-24 rounded-xl mt-24" style="background-image: url('./images/banner.png');
+                   background-position: center;
+                   background-repeat: no-repeat;
+                   background-size: cover;">
+
+      <div class="hero-overlay bg-opacity-60">
+      </div>
+
+      <div class="hero-content text-neutral-content text-center">
+
+        <!--main contents (start)-->
+        <div class="flex flex-col items-center space-y-4 md:space-y-10">
+          <h1 class="eb-garamond-font text-3xl md:text-7xl font-bold">We Provide Effective <br> Legal Solutions</h1>
+
+          <p class="text-sm md:text-xl w-[65%]">
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour.
+          </p>
+
+          <!--search layout-->
+          <div>
+            <input class="pl-2 md:pl-7 pr-4 md:pr-56 py-3 text-sm md:text-base rounded-md" type="text"
+              placeholder="Search your services">
+            <button class="btn bg-primary-color ml-2 md:px-6 border-none text-white">Search</button>
           </div>
-    </header>
+        </div>
+        <!--main contents (end)-->
 
-    <!---------->
-    <!-- Main -->
-    <!---------->
-    <main>
+      </div>
 
-    </main>
+    </section>
 
-    <!---------->
-    <!--footer-->
-    <!---------->
-    <footer>
 
-    </footer>
+
+
+
+
+
+
+    <!--------------------------->
+    <!--The Legal Practice Area-->
+    <!--------------------------->
+    <section class="my-32 space-y-4 md:space-y-7">
+      <h1 class="text-2xl md:text-5xl font-bold eb-garamond-font text-center">The Legal Practice Area</h1>
+      <p class="text-center px-[15%] text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+        some form, by injected humour.</p>
+
+      <!--item-layout-->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0">
+
+        <!-------------->
+        <!--item (1,1)-->
+        <!-------------->
+        <div class=" border border-slate-100 md:border-l-0 md:border-t-0">
+
+          <!--image part-->
+          <figure class="px-10 pt-10">
+            <img src="./images/business.png" class="mx-auto" />
+          </figure>
+
+          <!--text part-->
+          <div class="card-body items-center text-center md:space-y-2">
+            <h2 class="card-title eb-garamond-font font-bold text-xl md:text-3xl">Business Law</h2>
+            <p class="text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.</p>
+
+            <div class="card-actions bg-primary-color rounded-full p-3">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-------------->
+        <!--item (1,2)-->
+        <!-------------->
+        <div class=" border border-slate-100 md:border-l-0 md:border-t-0">
+
+          <!--image part-->
+          <figure class="px-10 pt-10">
+            <img src="./images/criminal.png" class="mx-auto" />
+          </figure>
+
+          <!--text part-->
+          <div class="card-body items-center text-center md:space-y-2">
+            <h2 class="card-title eb-garamond-font font-bold text-xl md:text-3xl">Criminal Law</h2>
+            <p class="text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.</p>
+
+            <div class="card-actions bg-primary-color rounded-full p-3">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-------------->
+        <!--item (1,3)-->
+        <!-------------->
+        <div class=" border border-slate-100 md:border-l-0 md:border-t-0 md:border-r-0">
+
+          <!--image part-->
+          <figure class="px-10 pt-10">
+            <img src="./images/child.png" class="mx-auto" />
+          </figure>
+
+          <!--text part-->
+          <div class="card-body items-center text-center md:space-y-2">
+            <h2 class="card-title eb-garamond-font font-bold text-xl md:text-3xl">Child Support</h2>
+            <p class="text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.</p>
+
+            <div class="card-actions bg-primary-color rounded-full p-3">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-------------->
+        <!--item (2,1)-->
+        <!-------------->
+        <div class=" border border-slate-100 md:border-l-0 md:border-t-0 md:border-b-0">
+
+          <!--image part-->
+          <figure class="px-10 pt-10">
+            <img src="./images/education.png" class="mx-auto" />
+          </figure>
+
+          <!--text part-->
+          <div class="card-body items-center text-center md:space-y-2">
+            <h2 class="card-title eb-garamond-font font-bold text-xl md:text-3xl">Education Law</h2>
+            <p class="text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.</p>
+
+            <div class="card-actions bg-primary-color rounded-full p-3">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-------------->
+        <!--item (2,2)-->
+        <!-------------->
+        <div class=" border border-slate-100 md:border-l-0 md:border-t-0 md:border-b-0">
+
+          <!--image part-->
+          <figure class="px-10 pt-10">
+            <img src="./images/divorce.png" class="mx-auto" />
+          </figure>
+
+          <!--text part-->
+          <div class="card-body items-center text-center md:space-y-2">
+            <h2 class="card-title eb-garamond-font font-bold text-xl md:text-3xl">Divorce Law</h2>
+            <p class="text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.</p>
+
+            <div class="card-actions bg-primary-color rounded-full p-3">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-------------->
+        <!--item (2,3)-->
+        <!-------------->
+        <div class=" border border-slate-100 md:border-0">
+
+          <!--image part-->
+          <figure class="px-10 pt-10">
+            <img src="./images/tax.png" class="mx-auto" />
+          </figure>
+
+          <!--text part-->
+          <div class="card-body items-center text-center md:space-y-2">
+            <h2 class="card-title eb-garamond-font font-bold text-xl md:text-3xl">Tax Law</h2>
+            <p class="text-sm md:text-base">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+              in some form, by injected humour.</p>
+
+            <div class="card-actions bg-primary-color rounded-full p-3">
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+  </main>
+
+  <!---------->
+  <!--footer-->
+  <!---------->
+  <footer>
+
+  </footer>
 
 </body>
+
 </html>
